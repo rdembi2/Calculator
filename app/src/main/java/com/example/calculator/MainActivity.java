@@ -38,11 +38,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // This connects the UI file to this file.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         setupUIViews();
 
+        // This allows the buttons to work when clicked.
         zero.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -175,6 +177,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupUIViews() {
+        // This connects the variables here to the xml file.
         zero = (Button)findViewById(R.id.btn0);
         one = (Button)findViewById(R.id.btn1);
         two = (Button)findViewById(R.id.btn2);
@@ -196,6 +199,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void compute() {
+        // This carries out the math functionality of the calculator.
         if(!Double.isNaN(val1)) {
             val2 = Double.parseDouble(info.getText().toString());
 
