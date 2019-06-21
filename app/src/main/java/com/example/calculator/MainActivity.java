@@ -210,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
                     val1 = val1 * val2;
                     break;
                 case DIVISION:
-                    val1 = val1 * val2;
+                    val1 = val1 / val2;
                     break;
                 case EQU:
                     break;
